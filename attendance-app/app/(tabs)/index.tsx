@@ -83,13 +83,13 @@ export default function App() {
       if (r.data.status === 'recorded') {
         setSelectedModule({ code: moduleCode, ...r.data });
         setScreen('success');
-      } else if (e.response?.data?.error === 'Please scan your QR code at the door first') {
-  Alert.alert('Scan Required', 'Please scan your QR code at the door before registering attendance.');
-} else {
-  Alert.alert('Error', 'Could not register attendance. Please try again.');
-}
+      } else {
+        Alert.alert('Already Registered', `You have already registered attendance for ${moduleCode} today.`);
+      }
     } catch (e) {
-      if (e.response?.data?.error === 'No active session for this module') {
+      if (e.response?.data?.error === 'Please scan your QR code at the door first') {
+        Alert.alert('Scan Required', 'Please scan your QR code at the door before registering attendance.');
+      } else if (e.response?.data?.error === 'No active session for this module') {
         Alert.alert('No Active Session', `There is no active session for ${moduleCode} right now.`);
       } else {
         Alert.alert('Error', 'Could not register attendance. Please try again.');
