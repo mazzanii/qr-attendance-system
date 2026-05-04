@@ -1,0 +1,2 @@
+[dotenv@17.3.1] injecting env (7) from .env -- tip: 🛠️  run anywhere with `dotenvx run -- yourcommand`
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdHVkZW50X2lkIjoiU1RVMDAxIiwiaWF0IjoxNzc1ODM5NDA4fQ.nDqdyPGzgbhUEZIu3PXCpKl9kPmDw4fQ5pZDKEoVL28

@@ -1,0 +1,14 @@
+# Dependencies
+node_modules
+
+# Environment
+.env
+
+# Expo
+.expo
+.expo-shared
+
+# Build outputs
+build
+dist
+web-build
